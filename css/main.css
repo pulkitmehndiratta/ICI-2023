@@ -41,6 +41,30 @@ td {
    z-index: 10000;
 }
 
+.slider{
+   width: auto;
+   height: 460px;
+   background: url(b1.jpg);
+   margin: 0px;
+   animation: slide 20s infinite;
+   }
+
+   @keyframes slide{
+      25% {
+      background: url(b5.jpg) ;
+      }
+      50% {
+      background: url(b3.jpg);
+      }
+      75%{
+      background: url(b4.jpg);
+      }
+      100%{
+      background: url(b1.jpg);
+      }
+      }
+
+
 .loader-inner {
    left: 0;
    position: absolute;
