@@ -53,6 +53,22 @@
         .flashing-icon {
             animation: flash 1s infinite;
         }
+
+      .blink {
+      animation: blink 2s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+      
     </style>
 </head>
 
@@ -204,7 +220,9 @@
                 winter in <br> Jaypee Institute of Information Technology, Noida.</p>
   <br>
 
-  <div class="flashing-icon">🌟 New</div>
+              
+
+  
               <div class="media-body">
                     <div class="names mb-0"><a href="Calender_ICI_2023.pdf" download style="color: Red ; font-size: 24px;">Click here for ICI 2023 Conference Calender
                         </a></div>
