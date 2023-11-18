@@ -58,6 +58,20 @@
       animation: blink 2s steps(5, start) infinite;
       -webkit-animation: blink 1s steps(5, start) infinite;
     }
+
+      @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinking-image {
+            animation: blink 1s infinite;
+        }
+      
     @keyframes blink {
       to {
         visibility: hidden;
@@ -222,7 +236,7 @@
 
               
 
-  
+  <img src="new.JPG" alt="Blinking Image" class="blinking-image">
               <div class="media-body">
                     <div class="names mb-0"><a href="Calender_ICI_2023.pdf" download style="color: Red ; font-size: 24px;">Click here for ICI 2023 Conference Calender
                         </a></div>
